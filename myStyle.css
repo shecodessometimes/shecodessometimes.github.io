@@ -49,7 +49,7 @@ body {
 	--link:#2274a5;
 	
 	--columnpad:1.25em;
-	--bottompad:3.5em;
+	--bottompad:0em;
 	--toppad:0em;
 	
 	--textpad:0em;
@@ -150,7 +150,7 @@ body{
 }
 
 p{
-	font-family: var(--bodytextfont);
+	font-family: var(--satisfy);
 	font-size: var(--textsizereg);
 	color:var(--ptext);
 }
@@ -218,6 +218,10 @@ h2{
 	margin-top:var(--toptextmargin);
 	
 	overflow: auto;
+	
+	font-family: var(--bodytextfont);
+	font-size: var(--textsizereg);
+	color:var(--ptext);
 } 
 
 .shortblob{
