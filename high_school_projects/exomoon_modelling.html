@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
+	charset="UTF-8">
+<title>Exomoon Modelling</title>
+<link rel="stylesheet" type="text/css" href="../myStyle.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Dancing+Script&family=Diplomata+SC&family=East+Sea+Dokdo&family=Joti+One&family=Libre+Barcode+39&family=Mrs+Sheppards&family=Pompiere&family=Satisfy&family=Sue+Ellen+Francisco&display=swap"
+	rel="stylesheet">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- image from: https://wonderfulengineering.com/engineering-pictures-in-hd-for-free-download/ -->
+	<div class="prules titletext" style="background-image: url('../images/top images/stemi.png')">
+		<h1>Modeling Exomoons</h1>
+		<p class='subtitle'>
+			<mark>STEM I - Fall 2019</mark>
+		</p>
+	</div>
+	<ul class="navbar">
+		<li><a href="../index.html">home</a></li>
+		<li><a href="../bio.html">about me</a></li>
+		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">projects</a>
+			<div class="dropdown-content">
+				<a href="../projects/python_piano.html">python piano</a> <a
+					href="../projects/ecg_sensor.html">ecg sensor</a> <a
+					href="../projects/processor.html">4-bit processor</a> <a
+					href="../projects/twitter_music_bot.html">twitter music bot</a> <a
+					href="../projects/museum_exhibit.html">museum exhibit</a>
+			</div></li>
+		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">high
+				school projects</a>
+			<div class="dropdown-content">
+				<a href="math_modelling.html">math modelling</a> 
+				<a href="sisp.html">sisp</a>
+				<a href="piano_pedal_pusher.html">piano pedal pusher</a> 
+				<a href="exomoon_modelling.html" class="active">exomoon modelling</a>
+			</div></li>
+		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">other</a>
+			<div class="dropdown-content">
+				<a href="../other/chile_photos.html">chile photos</a>
+			</div></li>
+	</ul>
+	<div class="clearfix">
+		<div class="blob">
+			<h4>Overview</h4>
+			I chose to do a stem project in astronomy. While searching for
+			possible questions that I could try to solve, I found that although
+			over 4,000 exoplanets have been discovered, no exomoons have been
+			confirmed.
+		</div>
+		<div class="blob">
+			<h4>Abstract</h4>
+			Even though hundreds of moons exist in our solar system, and over
+			four thousand planets have been found outside of the solar system, no
+			extrasolar moons have been confirmed. The main method used by
+			researchers to detect exoplanets has been transiting, which utilises
+			changes in the parent star’s light as the exoplanet passes across its
+			disk. The objective of this project is to help find exomoons by
+			utilising patterns found by modelling a planet-moon-sun system into
+			an algorithm that finds a suitable match for a given system. First, a
+			model with adjustable orbital parameters was made using VPython
+			through the GlowScript 2.9 IDE. Then, the TTVs and TDVs of different
+			orbital parameters were analyzed using Java Eclipse. However, no
+			direct correlation between different orbital parameters and TTVs and
+			TDVs were found. Future extensions would include rewriting the three
+			body model and coding an algorithm that takes these variations and
+			find possible exomoons in readily available exoplanetary data.
+		</div>
+		<div class="blob">
+			<h4>Problem Statement</h4>
+			Though over 4,000 exoplanets have been discovered so far, and over a
+			hundred moons exist in the solar system, no exomoons have ever been
+			confirmed.
+
+		</div>
+		<div class="blob">
+			<h4>Overall Aim</h4>
+			The overall aim of this project is to engineer a way to detect
+			exomoons in a transit curve. The goal is to find a correlation
+			between changes in the orbital parameters of an exomoon and the
+			resulting TTV and TDVs of the system.
+		</div>
+		<div class="blob" style="height: 500px;">
+			<h4>Background</h4>
+			&emsp;&emsp;Ever since antiquity, humankind has looked to the stars
+			for inspiration and the answer to the burning question of: Are we
+			alone? As the field of astronomy has progressed, this question has
+			been in the center of it. Advancements such as being able to detect
+			elements using spectroscopy, and understanding more about how our
+			solar system was formed have created a basis for the current study of
+			exoplanets, the focus of modern astrobiology. However, exoplanets
+			should not be the end-all be-all in the search for extraterrestrial
+			life. Exomoons are also viable options, as seen with the numerous
+			moons in our own solar system that are potentially habitable.
+			</p>
+			&emsp;&emsp;Exoplanetary science has evolved under the assumption
+			that Earth and our solar system are not special cases. It is assumed
+			that there exist other planets around stars that could potentially be
+			habitable by life. The very first exoplanet found orbiting around a
+			sun-like star, 51 Pegasib, was discovered in 1997 (Marcy, 1997) by
+			finding the wobble of the star that was caused by the planet. Since
+			then, more methods for finding exoplanets have been employed. The
+			most successful, the transiting method, has found thousands of
+			exoplanets, most notably through data collected by NASA’s Kepler
+			spacecraft. The transiting method measures the amount of light
+			emitted from a star over a certain interval of time. This is then
+			graphed, resulting in a “transit curve”. Researchers then look for
+			periodic dips in the data, known as “transits”, which are indicative
+			of an exoplanet orbiting the star. This method finds the period,
+			radius, and semi-major axis of the exoplanet’s orbit, but needs to be
+			cross-referenced with another method of detection in order to prove
+			that the exoplanet exists. There are major drawbacks to this method,
+			such as its reliance on the orbital inclination of the planetary
+			system being such that these “transits” are visible from Earth, and
+			the inherent presence of noise in the observational data. However,
+			this method has found more exoplanets than any other method combined.
+			Given that only a fraction of possible exoplanets can be found using
+			the transiting method, this means that, statistically, many
+			exoplanets exist that simply cannot be discovered using the transit
+			method. This also supports the theory that our planetary system is
+			not a unique one, and, by extension, that life could exist outside of
+			it.
+			</p>
+			&emsp;&emsp;The only model for a planet that harbors life is our own,
+			the Earth, though Mars and Venus could have been habitable in its
+			past. There are also multiple moons that could be habitable: Europa,
+			Enceladus, Titan, Io, and possibly Ganymede. Given the large number
+			of moons in the solar system, and the fact that potentially habitable
+			moons do exist, exomoons could potentially hold the same value for
+			finding life as exoplanets do. The same methods to detect exoplanets
+			could potentially be applied to the discovery of exomoons. However,
+			though various methods have been suggested to detect them, no exomoon
+			has ever been confirmed. Whether or not a planet could be habitable
+			depends on multiple factors: the type of planet and whether it has
+			the chemicals needed for life in an appropriate state. Likewise,
+			whether or not an exomoon is potentially habitable relies on its
+			initial composition. Additionally, the potential habitability of an
+			exomoon depends on the distance from its star and planet and radius
+			(Lammer, 2014), as well as the stability of its orbit and the maximum
+			orbital separation (Kaltenegger, 2010).
+			</p>
+			&emsp;&emsp;Methods for detecting an exomoon that have been proposed
+			so far revolve around two ways that the presence of an exomoon
+			changes the transit curve of its exoplanet: Transit Timing Variation
+			(TTV) and Transit Duration Variation (TDV) (Kipping, 2011). The
+			first, TTV, focuses on how the time intervals between each transit
+			could fluctuate based on how an exomoon would orbit the planet.
+			However, there are other phenomena besides a moon that have been
+			known to cause TTVs, such as trojans (very small bodies that orbit on
+			a planet’s outer Lagrangian points) and solar activity. An analysis
+			of a system’s TTVs can also lead to finding other exoplanets because
+			of their gravitational effects on other planets (Nesvorný, 2013). The
+			second way an exomoon could affect a transit curve, TDV, focuses on
+			how an exomoon could change the length of transiting itself. When TTV
+			and TDV effects agree with each other well, it is very possible that
+			the exomoon could exist.
+			</p>
+			&emsp;&emsp;What I want to do is create a flexible model of a
+			sun-planet-moon system that can take various initial conditions, such
+			as the semi-major axes of the planet and moon, the radii of the sun,
+			planet, and moon, the masses of the sun, planet, and moon, and the
+			luminosity of the star. I will then see if the TTVs and TDVs of a
+			system are dependent on any of these factors, and if so, which
+			factors affect them the most, and why. I will then try to find
+			exomoons by looking at a wide spread of available exoplanet
+			transiting data, model the given two body exoplanet-sun system, and
+			if that light curve is far enough away from the actual light curve, I
+			will add an exomoon to my model, find the light curve again, and see
+			if this light curve is more similar to the observed transit curve.
+			</p>
+			&emsp;&emsp;A challenge in modelling a star-planet-moon system is
+			that there are more than two bodies acting upon each other. When two
+			bodies act upon each other, the resulting model is predictable.
+			However, when more bodies act upon each other, the system is
+			ever-changing and cannot be predicted. The “three body problem,” a
+			case where three bodies act upon each other, has been especially
+			researched. There are special cases for three body systems in which
+			the model is periodic and solvable. In fact, 13 additional families
+			of solutions (Šuvakov, 2013) to the three body problem were
+			discovered in 2013, adding to the previous three that were already
+			known.
+		</div>
+		<div class="blob" style="height: 300px;">
+			<img src="../images/stem/methodologyinfographic.png"
+				style="width: 50%; margin-left: 25%;">
+		</div>
+		<div class="blob" style="height: 500px;">
+			<h4>Procedure</h4>
+			&emsp;&emsp;A Toshiba Satellite S55-A5295 with an Intel Core 3630 QM
+			Quad Core with the Windows 10 operating system and a 1 TB hard drive
+			and a 12 GB RAM was used. Eclipse Java 2019-06 was downloaded, along
+			with an offline version of the Glowscript IDE.
+			</p>
+			&emsp;&emsp;VPython version 2.9 was chosen after a brief bit of
+			research, as it suited all of the needs for the first part of the
+			project. Example projects were looked at, and I attempted to make a
+			first model using the demos. I emailed Prof. Kipping and Dr Arnold,
+			both of whom responded. Primarily using the Glowscript online IDE on
+			glowscript.org, I made a three-body model of a star-planet-moon
+			system. At first, I tried to do this by working off of the demos
+			shown on glowscript.org, notably BinaryStar-VPython and
+			Stars-VPython. However, these models quickly broke when I tried
+			changing the orbital parameters. I then used the VPython knowledge I
+			learned from the demos to make my own model, from scratch. I got the
+			two-body system to work, but was unable to debug my code for a
+			three-body system. After failing to get the three-body system to
+			work, I decided to use the two-body system that I’d already created,
+			and made a three-body system using two two-body systems, imbedded in
+			each other, so that the planet-moon system was one body system, and
+			the sun-(planet-moon) system was another. I then tweaked various
+			orbital parameters and downloaded various frames, or screenshots of
+			the program at a point in time. I then made a script in Eclipse that
+			found all of these frames, and gave values for the amount of light
+			present in each. I graphed these data points in Google Docs to get
+			the resulting graphs.
+			</p>
+			&emsp;&emsp;All of the unanalyzed data was uploaded onto Google Drive
+			for use as a back-up. All of the collected data can be found <a
+				href="https://osf.io/gkqap/quickfiles/" class="link">here</a>
+			The data was analyzed on Eclipse. TTVs and TDVs were found by finding
+			the start time and end time of each transit, which were then printed
+			out, and graphed to see whether there was a direct correlation or
+			not. No direct correlation between TTVs, TDVs, and changes in moon or
+			planet mass or radius were found, contrary to the initial hypothesis.
+		</div>
+	</div>
+	<div class="blob">
+		<h4>Control v. Data</h4>
+		<img class="floatleft" src="../images/stem/controlregcompare.png"
+			style="width: 40%;"> Control (red) v. initial
+		data (blue). The initial transit is with an exomoon of mass 2.04 M<sub>☾</sub>
+		and radius 1 R<sub>☾</sub> orbits an exoplanet of mass 1 M<sub>⊕</sub>
+		radius 100 R<sub>⊕</sub>. The star has a radius of 10 R<sub>☉</sub>
+		and a mass of 1 M<sub>☉</sub>. The control has the same orbital
+		parameters, but without the moon.
+	</div>
+	<div class="blob">
+		<h4>Model</h4>
+		<div>
+			<iframe width="100%" height="100%" class="floatleft"
+				src="../images/febfair.mp4"> </iframe>
+		</div>
+		The video above illustrates how the Glowscript IDE was used, and what
+		the three body model ended up looking like. The first part of the
+		video shows how the data was collected, with the disk of the sun
+		visibly transited, and the frames being downloaded. The second part of
+		the video shows a top-down view of the modelled system, with the radii
+		of the sun and planet multiplied by 10<sup>2</sup> and 10<sup>3</sup>,
+		respectively. The third part of the video zooms into the planet-moon
+		system, with both the planet and moon radii multiplied by a factor of
+		10. The last part of the video illustrates how nothing seems to show
+		up when looking at the system with its true size; the sun, planet, and
+		moon are all way too small.
+	</div>
+	<div class="blob">
+		<h4>TTV</h4>
+		<img class="floatleft" src="../images/stem/ttvradius.png"
+			alt="stem snap" style="width: 40%;"> How the calculated TTV
+		varies when the planet’s radius is changed.
+	</div>
+	<div class="blob">
+		<h4>TDV</h4>
+		<img class="floatleft" src="../images/stem/tdvradius.png"
+			alt="stem snap" style="width: 40%;"> How the calculated TDV
+		varies when the planet’s radius is changed.
+	</div>
+	<div class="blob" width="100%">
+		<h4>Analysis</h4>
+		&emsp;&emsp;As you can see, there is no smooth increase in the TTV or
+		TDV for any of the graphs, as would be expected, except for the planet
+		radius TDV graph, which is only because the definition of a transit
+		would mean that something was seriously wrong with my model if light
+		wasn’t blocked for a longer duration of time when the planet had a
+		larger radius. Most of the bumps in the graphs can probably be
+		attributed to my data not being precise enough. However, I did find
+		this really cool phenomenon for each of the individual graphs yeah,
+		basically I didn’t get any clear TTV or TDV results. Additionally,
+		though my control transit is supposed to have a completely flat
+		bottom, it has the same bumps that I experienced earlier with the rest
+		of my data:
+		</p>
+		&emsp;&emsp;So basically, though my data may be precise, it is not
+		very accurate. This means that I cannot build a reliable model upon
+		it, and would need to collect more data in order to find a model that
+		works.
+	</div>
+	<div class="blob" width="100%">
+		<h4>Discussion</h4>
+		&emsp;&emsp;My initial goal was not met for this project, as I did not
+		end up making an algorithm that would be capable of finding an
+		exomoon. I made an exomoon-exoplanet-star model, and found really
+		interesting bumps at the bottom of the transit curve that I thought
+		might hold some significance, and possibly be some sort of phenomenon
+		that hadn’t been observed before. However, when I collected the
+		control data, that is data for simply the planet-star model, and thus
+		should not have had those bumps, I found that the control data also
+		had such anomalies. As I personally have never seen these anomalies in
+		scientific literature, and it also wouldn’t make sense physically, I
+		would rather say that the data is indicative of an inherent flaw in
+		the model I created to model this system, than I have discovered some
+		new phenomenon. As such, it would be irresponsible of me to meet my
+		initial goal, and code and algorithm to look for exomoons based on
+		faulty data. Thus, if I want to make this project useful to the
+		scientific community at large, I would need to find the bug in my
+		program that is making these anomalies, or switch to another
+		program/model entirely.
+	</div>
+	<div class="blob" width="100%">
+		<h4>References</h4>
+		<embed src="../docs/citations.pdf" width="100%" height="500" alt="pdf"
+			pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+	</div>
+	<div class="blob" width="100%">
+		<h4>February Fair Board</h4>
+		We had a practice science fair in December, in order to check in and
+		make sure that we knew what we were doing. This is what was on my
+		poster board for December Fair, and should give a general outline of
+		what my project looked like in December.
+		<embed src="../docs/decemberfairboard.pdf" width="100%" height="500"
+			alt="pdf"
+			pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+	</div>
+	</div>
+</body>
+</html>

@@ -1,26 +1,14 @@
 @charset "UTF-8";
 
 body {
-	--shadowsintolight:'Shadows Into Light', cursive;
-	--satisfy:'Satisfy', cursive;
-	--inconsolata:'Inconsolata', monospace;
-	
-	--amaticsc: 'Amatic SC', cursive;
+	--satisfy:'Satisfy';
 	--caveat: 'Caveat', cursive;
-	--dancingscript: 'Dancing Script', cursive;
-	--diplomatasc: 'Diplomata SC', cursive;
-	--eastseadokdo: 'East Sea Dokdo', cursive;
-	--jotione: 'Joti One', cursive;
-	--lol: 'Libre Barcode 39', cursive;
-	--mrssheppards: 'Mrs Sheppards', cursive;
-	--pompiere: 'Pompiere', cursive;
-	--sueellenfrancisco: 'Sue Ellen Francisco', cursive;
+	--sueellenfrancisco: 'Sue Ellen Francisco';
 	
 	--navbarfont:var(--satisfy);
 	--bodytextfont:var(--caveat);
 	--titlefont:var(--sueellenfrancisco);
 	--subtitlefont:var(--satisfy);
-	--verysecretfont:var(--lol);
 	
 	--textsizereg:1.6em;
 	--textsizetitle:4em;
@@ -111,7 +99,7 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: var(--navbdropback);
-  min-width: 160px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -204,6 +192,12 @@ h2{
 	font-weight:normal;
 }
 
+h4{
+	color:var(--link);
+	margin-top:0;
+	margin-bottom:0.4em;
+}
+
 .blob{
 	padding:var(--toppad) var(--columnpad) var(--bottompad) var(--columnpad);
 	
@@ -287,6 +281,7 @@ h2{
 }
 
 .pickyourfilter{
+	filter: contrast(50%) brightness(100%);
 }
 
 .prules{
@@ -294,63 +289,3 @@ h2{
 	background-repeat:no-repeat;
 	background-size:cover;
 	height:var(--parheight);
-}
-
-.part{
-	background-image: url("images/top images/art.png");
-}
-.pbio{
-	background-image: url("images/top images/bio.jpg");
-}
-.pinx{
-	background-image: url("images/top images/index.jpg");
-}
-
-.pcs{
-	background-image: url("images/top images/cs.jpg");
-}
-.pcod{
-	background-image: url("images/top images/coding.jpg");
-}
-.pcom{
-	background-image: url("images/top images/community service.jpg");
-}
-.pfrn{
-	background-image: url("images/top images/french.jpg");
-}
-.phum{
-	background-image: url("images/top images/hum.jpg");
-}
-.pmat{
-	background-image: url("images/top images/mathmodelling.jpg");
-}
-.pmth{
-	background-image: url("images/top images/math.jpg");
-}
-.pmus{
-	background-image: url("images/top images/music.jpg");
-}
-.pphy{
-	background-image: url("images/top images/physics.jpg");
-}
-.ppot{
-	background-image: url("images/top images/poetry.jpg");
-}
-.psai{
-	background-image: url("images/top images/sailing.jpg");
-}
-.psci{
-	background-image: url("images/top images/science.jpg");
-}
-.psis{
-	background-image: url("images/top images/sisp.jpg");
-}
-.pstmi{
-	background-image: url("images/top images/stemi.jpg");
-}
-.pstmii{
-	background-image: url("images/top images/stemii.jpg");
-}
-.pstw{
-	background-image: url("images/top images/stw.jpg");
-}

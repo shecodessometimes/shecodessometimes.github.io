@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
+	charset="UTF-8">
+<title>Music Again: A Piano Pedal Pusher Project</title>
+<link rel="stylesheet" type="text/css" href="../myStyle.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Dancing+Script&family=Diplomata+SC&family=East+Sea+Dokdo&family=Joti+One&family=Libre+Barcode+39&family=Mrs+Sheppards&family=Pompiere&family=Satisfy&family=Sue+Ellen+Francisco&display=swap"
+	rel="stylesheet">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- image from: https://wonderfulengineering.com/engineering-pictures-in-hd-for-free-download/ -->
+	<div class="prules titletext" style="background-image: url('../images/top images/stemii.png')">
+		<div></div>
+		<h1>Music Again: A Piano Pedal Pusher Project</h1>
+		<p class='subtitle'>
+			<mark>STEM II - Spring 2020</mark>
+		</p>
+	</div>
+	<ul class="navbar">
+		<li><a href="../index.html">home</a></li>
+		<li><a href="../bio.html">about me</a></li>
+		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">projects</a>
+			<div class="dropdown-content">
+				<a href="../projects/python_piano.html">python piano</a> <a
+					href="../projects/ecg_sensor.html">ecg sensor</a> <a
+					href="../projects/processor.html">4-bit processor</a> <a
+					href="../projects/twitter_music_bot.html">twitter music bot</a> <a
+					href="../projects/museum_exhibit.html">museum exhibit</a>
+			</div></li>
+		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">high
+				school projects</a>
+			<div class="dropdown-content">
+				<a href="math_modelling.html">math modelling</a> <a href="sisp.html">sisp</a>
+				<a href="piano_pedal_pusher.html" class="active">piano pedal
+					pusher</a> <a href="exomoon_modelling.html">exomoon modelling</a>
+			</div></li>
+		<li class="dropdown"><a href="javascript:void(0)" class="dropbtn">other</a>
+			<div class="dropdown-content">
+				<a href="../other/chile_photos.html">chile photos</a>
+			</div></li>
+	</ul>
+	<div class="clearfix">
+		<div class="blob">
+			<h4>Course Description</h4>
+			During STEM 2, we work in groups of three to four people with the
+			folks at Seven Hills and Easter Seals to produce specialized
+			assistive technology for our clients there. 
+		</div>
+		<div class="blob">
+			<h4>Problem Description</h4>
+			Spinal cord injuries are a broad class of injuries that involve
+			damage of the spinal cord which transmits signals to and from the
+			brain. These injuries often result in limited motor function, making
+			it difficult for the patient to move the muscles in their arms,
+			hands, feet, and legs. ​This can make it challenging for these
+			individuals to complete daily tasks independently, such as brushing
+			their teeth, writing, typing, and even playing music. ​The goal of
+			this project is to design a device that will allow these individuals
+			to independently play an instrument and produce music.
+		</div>
+		<div class="blob">
+			<h4>Approach</h4>
+			First we came up with three different project ideas: a guitar pick, a
+			trombone slide controller, and a piano pedal pusher. We modelled
+			these in CAD and then performed stress analysis on them to aid in
+			deciding which of three designs should be further modelled into a
+			prototype. This ultimately ended being the piano pedal pusher. Our
+			goal with this project was to improve the experience of playing an
+			existing device. We decided to focus on helping patients with limited
+			range of motion in their legs to play music on the piano while
+			utilizing pedals. The model works by signaling for motors to extend
+			and retract cylinders which will push down pedals. The motors would
+			be connected to an Arduino where each motor is connected to an
+			associated button. When the button is pressed, the motor would rotate
+			one way to push down the pedal and when the button is released, the
+			cylinder would retract and allow the pedal to go back. Below is the
+			requirements document that helped us decide which project to pursue.
+			<embed src="../docs/prototyperequirements.pdf" width="100%"
+				height="500" alt="pdf"
+				pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+		</div>
+		<div class="blob">
+			<h4>Design 2.1</h4>
+					<img class="floatleft" src="../images/stem 2/design21.png"
+			style="width: 40%;">
+			The initial prototype only included the base, without any sort of
+			pushing mechanism, but the intended pushing mechanism was three
+			pistons, one at each circular hole.
+		</div>
+		<div class="blob">
+			<h4>Design 2.2</h4>
+					<img class="floatleft" src="../images/stem 2/design22.png"
+			style="width: 40%;">
+			This design added the pistons to Design 2.1. Though these aren’t real
+			pistons, they illustrate what actual pistons would look like if
+			attached to Design 2.1.
+		</div>
+		<div class="blob">
+			<h4>Design 2.3</h4>
+					<img class="floatleft" src="../images/stem 2/design23.png"
+			style="width: 40%;">
+			This design changed the method of pushing down the pedal from a
+			piston to a gear. The gears aren't finished, but they have been
+			started. Additionally, the middle and right piano pedal pushing
+			plates have been created and a detachable connector that secures the
+			piano pedal pusher has been implemented.
+		</div>
+		<div class="blob">
+			<h4>Design 2.4</h4>
+		<img class="floatleft" src="../images/stem 2/design24.png"
+			style="width: 40%;">
+			The final design uses gears to change the positions of the piano
+			pedal pushers. These piano pedal pushers consist of a block with a
+			piano pedal imprint underneath them, which are attached to a rod with
+			teeth on the top of it, which connects to the motor which causes the
+			rod to go both up and down. Electrical components still need to be
+			added for the device to function.
+		</div>
+		<div class="blob">
+			<h4>Final Product: Design 2.5</h4>
+			<video class="floatright" style=" margin: 1em;" width="400"
+				height="300" controls>
+				<source src="../images/stem 2/pianopedalpushertest.mp4"
+					type="video/mp4">
+			</video>
+			&emsp;&emsp;The final device uses gears to change the positions of
+			the piano pedal pushers. These piano pedal pushers consist of a block
+			with a piano pedal imprint underneath them, which are attached to a
+			rod with teeth on the top of it, which connects to the motor which
+			causes the rod to go both up and down. We printed out the design, had
+			to adjust a few things, and then added the electrical components for
+			the device to function. The piano pedal pusher hasn't been tested on
+			a piano yet, but preliminary tests indicate that it may be too weak
+			to push down a piano pedal.​
+			</p>
+			&emsp;&emsp;In the near future, we hope to continue progressing this
+			project and make some improvements for a more complete final design.
+			After running more tests, we would like to make any necessary updates
+			the design requires, and produce a more finalized product. Then, we
+			would like to be able to meet with the Seven Hills staff and clients
+			to show them our product and get feedback. Our end goal would be to
+			produce a fully functioning final design that can be used at Seven
+			Hills to help clients play the piano and provide them with a positive
+			music experience. The Instructables for this project can be found <a
+				href="https://www.instructables.com/id/Piano-Pedal-Pusher/" class="link">here</a>.
+			You can also download the CAD files for this project <a
+				href="https://grabcad.com/library/piano-pedal-pusher-1" class="link">here</a>.
+		</div>
+	</div>
+	<div class="blob" width="100%">
+		<h4>Poster</h4>
+		This ended up being our final poster for the project. It was made
+		before the physical prototype, Design 2.5, was made.
+		</p>
+		<embed src="../docs/stemiiposter.pdf" width="100%" height="500"
+			alt="pdf"
+			pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+	</div>
+</body>
+</html>

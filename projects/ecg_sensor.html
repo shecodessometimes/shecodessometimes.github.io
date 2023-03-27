@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ECG Sensor</title>
+		<link rel="stylesheet" type="text/css" href="../myStyle.css">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Dancing+Script&family=Diplomata+SC&family=East+Sea+Dokdo&family=Joti+One&family=Libre+Barcode+39&family=Mrs+Sheppards&family=Pompiere&family=Satisfy&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div class="prules titletext" style="background-image: url('../images/top images/ecg.png')">
+			<h1>ECG Sensor</h1>
+			<p class='subtitle'><mark>Circuits and Signals: Biomedical Applications - Fall 2022</mark></p>
+		</div>
+		<ul class="navbar">
+			<li><a href="../index.html">home</a></li>
+			<li><a href="../bio.html">about me</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">projects</a>
+				<div class="dropdown-content">
+					<a href="python_piano.html">python piano</a>
+					<a href="ecg_sensor.html" class="active">ecg sensor</a>
+					<a href="processor.html">4-bit processor</a>
+					<a href="twitter_music_bot.html">twitter music bot</a>
+					<a href="museum_exhibit.html">museum exhibit</a>
+				</div>
+			</li>	
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">high school projects</a>
+				<div class="dropdown-content">
+					<a href="../high_school_projects/math_modelling.html">math modelling</a>
+					<a href="../high_school_projects/sisp.html">sisp</a>
+					<a href="../high_school_projects/piano_pedal_pusher.html">piano pedal pusher</a>
+					<a href="../high_school_projects/exomoon_modelling.html">exomoon modelling</a>
+				</div>
+			</li>	
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">other</a>
+				<div class="dropdown-content">
+					<a href="../other/chile_photos.html">chile photos</a>
+				</div>
+			</li>
+		</ul>
+		<div class="clearfix">
+			<div class="blob">
+				For the last two labs of my Circuits and Signals class, we designed an ECG sensor in pairs, and then tested the sensors on each other. We first filtered the incoming signal from the electrodes with a high and low pass op-amp filter to filter out noise and extraneous signals. This data was then fed to MATLAB using an A/D, and was then further analyzed in order to determine the bpm. The full paper can be found below.</p>
+				<embed src="../docs/ecgpaper.pdf" width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+			</div>
+		</div>
+	</body>
+</html>
