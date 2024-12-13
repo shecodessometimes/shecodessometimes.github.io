@@ -237,7 +237,7 @@ h4{
 } 
 
 .firsthalf{
-	width: 37.5%;
+	width: 50%;
 	float: left;
 	padding:var(--toppad) var(--columnpad) var(--bottompad) var(--columnpad);
 	
@@ -252,24 +252,25 @@ h4{
 	margin-top:var(--toptextmargin);
 	
 	overflow: auto;
+	
+	font-family: var(--bodytextfont);
+	font-size: var(--textsizereg);
+	color:var(--ptext);
 } 
 
 .secondhalf{
-	width: 37.5%;
+	width: 24%;
 	float: right;
-	padding:var(--toppad) var(--columnpad) var(--bottompad) var(--columnpad);
-	
-	border-style: solid;
-	border-width: var(--border);
-	border-color:var(--pborder);
-	border-radius: 2px;
-	
-	background-color:var(--pfill);
-	
+	padding:var(--toppad) 0 var(--bottompad) 0;
+		
 	margin:var(--mosttextmargin);
 	margin-top:var(--toptextmargin);
 	
 	overflow: auto;
+	
+	font-family: var(--bodytextfont);
+	font-size: var(--textsizereg);
+	color:var(--ptext);
 } 
 
 .floatright{
