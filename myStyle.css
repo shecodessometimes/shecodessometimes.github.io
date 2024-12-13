@@ -4,13 +4,15 @@ body {
 	--satisfy:'Satisfy';
 	--caveat: 'Caveat', cursive;
 	--sueellenfrancisco: 'Sue Ellen Francisco';
+	--poppins: "Poppins", sans-serif;
+	--robotocondensed: "Roboto Condensed", sans-serif;
+
+	--navbarfont:var(--poppins);
+	--bodytextfont:var(--robotocondensed);
+	--titlefont:var(--poppins);
+	--subtitlefont:var(--poppins);
 	
-	--navbarfont:var(--satisfy);
-	--bodytextfont:var(--caveat);
-	--titlefont:var(--sueellenfrancisco);
-	--subtitlefont:var(--satisfy);
-	
-	--textsizereg:1.6em;
+	--textsizereg:1.5em;
 	--textsizetitle:4em;
 	--textsizesub:1.7em;
 	--textsizenavb:1.5em;
